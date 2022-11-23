@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MuchosCustomHooks } from './componentes/MuchosCustomHooks';
+import Primero from './Primero';
 
 
-
-const divRoot = document.querySelector('#root');
-
-
-ReactDOM.render( <MuchosCustomHooks/>, divRoot);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Primero numero='10'/>
+  </React.StrictMode>
+);
